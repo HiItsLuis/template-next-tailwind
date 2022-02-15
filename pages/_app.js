@@ -1,8 +1,11 @@
+import LayoutWrapper from '@/components/LayoutWrapper'
 import '@/styles/globals.css'
 
 function MyApp ({ Component, pageProps }) {
   return (
-    <Component {...pageProps} />
+    <LayoutWrapper>
+      <Component {...pageProps} />
+    </LayoutWrapper>
   )
 }
 
